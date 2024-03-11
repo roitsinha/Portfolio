@@ -8,7 +8,7 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
-  useEffect(() => emailjs.init("RKum-TqXGKAhCWRhg"), []);
+  useEffect(() => emailjs.init(process.env.REACT_APP_API_KEY), []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,11 +26,15 @@ const Contact = () => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    await emailjs.send("service_f3bj3ql", "template_vtvms2p", {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    });
+    await emailjs.send(
+      process.env.REACT_APP_SERVICE_KEY,
+      process.env.REACT_APP_TEMPLATE_KEY,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }
+    );
     alert("message send successfully");
     // emailjs.sendForm(formData, "RKum-TqXGKAhCWRhg");
     setFormData({
