@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;  // slightly less padding to balance overall spacing
+}
+
+.photo {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);  // slightly stronger shadow
+  border: 2px solid #eee;
+}
+
+.name {
+  font-weight: 600;  // slightly bolder
+  color: var(--theme-page-text);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;  // some spacing below the photo
+}
+
+.headerContainer {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;  // better spacing between photo/info and text
+  justify-content: center;
+  flex-wrap: wrap;  // improve responsiveness
+}
+
+.locationInfo {
+  font-weight: 300;
+  margin-left: 6px;  // slightly more space from icon
+  font-size: 0.85rem;
+  color: var(--theme-page-text);
+}
+
+.headerTxt {
+  font-size: 1.6rem;
+  color: var(--theme-page-text);
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+.infos {
+  margin-bottom: 3rem;
+  width: 60%;
+  color: var(--theme-page-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.headerSpan {
+  display: block;
+}
+
+.infoConatiner {
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--theme-page-text);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+
+  & > * {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  & > *:hover {
+    transform: scale(1.15);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .infos {
+    width: 75%;
+  }
+  .container {
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .infos {
+    width: 90%;
+  }
+  .infoConatiner {
+    margin-right: 0;
+  }
+}

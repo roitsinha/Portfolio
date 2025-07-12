@@ -1,0 +1,51 @@
+.light {
+   --theme-page-background: #fff;
+   --theme-page-text: #111;
+   --theme-primary-color: #3b5998; 
+   --theme-secondary-color: #3b5998;
+   --theme-button-linear-gradient: linear-gradient(45deg, #4a90e2, #2b65d9);
+
+   
+   --copyright-text-color: #666666;
+   --copyright-link-hover: #2b3a67;
+}
+
+.dark {
+   --theme-page-background: #222831;
+   --theme-page-text: #fff;
+   --theme-primary-color: #3b5998; 
+   --theme-secondary-color: #3b5998;
+   --theme-button-linear-gradient: linear-gradient(45deg, #4a90e2, #2b65d9);
+
+ 
+   --copyright-text-color: #bbbbbb;
+   --copyright-link-hover: #4a90e2;
+}
+
+.container {
+   min-width: 100vw;
+   min-height: 100vh;
+   padding: 3rem;
+   background-color: var(--theme-page-background);
+   transition: all 0.5s ease;
+   color: var(--theme-page-text);
+}
+
+.topbarContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+   .container {
+      padding: 3rem 1rem;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .container {
+      padding: 3rem 0.7rem;
+   }
+}

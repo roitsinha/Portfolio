@@ -1,0 +1,122 @@
+:root {
+  --royal-blue: #2b3a67;
+  --royal-blue-hover: #3b4b77;
+
+  /* Remove these since we use --theme-page-text from App.module.scss */
+  /* --text-color-light: #2b3a67; */
+  /* --text-color-dark: #fff; */
+
+  --bg-light: #fff;
+  --bg-dark: #121212;
+
+  --underline-light: var(--royal-blue-hover);
+  --underline-dark: var(--theme-page-text);
+}
+
+/* Default: light mode */
+body {
+  background-color: var(--bg-light);
+  color: var(--theme-page-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme='dark'] {
+  background-color: var(--bg-dark);
+  color: var(--theme-page-text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  width: 40%;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: var(--theme-page-text);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--underline-light);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+[data-theme='dark'] .title::after {
+  background-color: var(--underline-dark);
+}
+
+.title:hover {
+  color: var(--royal-blue-hover);
+}
+
+[data-theme='dark'] .title:hover {
+  color: var(--theme-page-text);
+}
+
+.title:hover::after {
+  width: 100%;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.linksContainer > a {
+  color: var(--theme-page-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.linksContainer > a:hover {
+  color: var(--royal-blue-hover);
+  transform: scale(1.05);
+}
+
+.summary {
+  display: block;
+  font-size: 1rem;
+  font-family: Rubik, monospace;
+  text-align: left;
+  color: var(--theme-page-text);
+  margin-top: 0.5rem;
+  max-width: 100%;
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+    padding-left: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 0.5rem;
+  }
+}

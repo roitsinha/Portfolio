@@ -1,0 +1,65 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   padding-top: 5rem;
+   align-items: center;
+ }
+ 
+ .skillsContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .skillsListContainer {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: 2.5rem 0;
+   padding: 2rem;
+   justify-content: center;
+   background-color: rgba(43, 58, 103, 0.05); // light royal-blue tint
+   border: 1px solid var(--royal-blue-hover);
+   border-radius: 10px;
+   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+   transition: background-color 0.3s ease, border-color 0.3s ease;
+ }
+ 
+ .skillsListContainer ul {
+   padding-left: 1.2rem;
+   margin: 0;
+   list-style-type: disc;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem 1.5rem;
+ }
+ 
+ .skillsListContainer li {
+   font-weight: 500;
+   font-size: 0.95rem;
+   line-height: 1.8;
+   color: var(--theme-page-text);
+   font-family: "Rubik", monospace;
+ }
+ 
+ .educationContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 4rem;
+ }
+ 
+ .educationListContainer {
+   display: flex;
+   flex-direction: column;
+   margin-top: 2.5rem;
+   gap: 2rem;
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   .skillsListContainer {
+     width: 90%;
+     padding: 1.5rem;
+   }
+ }
+ 

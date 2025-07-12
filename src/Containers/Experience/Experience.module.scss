@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto;
+  width: 40%;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  align-items: flex-start; 
+}
+
+.experience {
+  border-left: 3px solid var(--royal-blue);
+  padding: 1rem 1rem 1rem 1.2rem;
+  margin-bottom: 1.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.experience h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--theme-page-text);
+  cursor: default;
+  text-align: center; 
+}
+
+.experience h3 span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--royal-blue-hover);
+  margin-left: 0.5rem;
+}
+
+.roleOrg {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.2rem 0;
+  color: var(--theme-page-text);
+  text-align: center; 
+}
+
+.locationDate {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0 0 0.7rem 0;
+  opacity: 0.7;
+  text-align: center; 
+}
+
+.descriptionList {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-position: outside;
+  font-size: 1rem;
+  font-family: Rubik, monospace;
+  line-height: 1.4;
+  text-align: left; 
+}
+
+.descriptionList li {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+    padding-left: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 0.5rem;
+  }
+}

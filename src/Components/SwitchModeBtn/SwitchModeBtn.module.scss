@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 2.5rem;
+  height: 1.6rem;
+  background: white;
+  border-radius: 1rem;
+  overflow: visible;
+  padding: 0 0.4rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 1000;
+}
+
+.lightModeBorder {
+  border: 1px solid rgba(17, 17, 17, 0.25);
+}
+
+.buttonText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: font-size 0.3s ease;
+}
+
+.darkText {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
