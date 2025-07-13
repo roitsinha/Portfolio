@@ -1,5 +1,5 @@
 import classes from './Home.module.scss';
-import photo from '../../assets/rohit.jpeg'; 
+import photo from '../../assets/rohit.webp'; 
 import { MdLocationOn } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaTwitter, FaUser } from 'react-icons/fa';
 function Home() {

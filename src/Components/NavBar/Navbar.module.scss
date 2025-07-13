@@ -13,12 +13,12 @@
   background-color: var(--bg-color);
 
   @media (max-width: 768px) {
-    top: 3.2rem; /* below hamburger button */
+    top: 3.2rem;
     left: 0;
     width: 100%;
     height: auto;
-    flex-direction: row;         /* changed to row */
-    align-items: center;         /* vertically center */
+    flex-direction: row;
+    align-items: center;
     padding: 0.75rem 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(-200%);
@@ -37,10 +37,17 @@
   gap: 1.2rem;
 
   @media (max-width: 768px) {
-    flex-direction: row;         /* changed to row */
-    align-items: center;         /* vertically center */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    gap: 1rem;                  /* horizontal spacing */
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+    justify-content: flex-start;
   }
 }
 
@@ -53,8 +60,9 @@
   width: 100%;
 
   @media (max-width: 768px) {
-    width: auto;               /* allow width to fit content in row */
-    padding: 0.5rem 0.75rem;
+    width: auto;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -67,7 +75,6 @@
   background-color: rgba(66, 91, 140, 0.15);
 }
 
-/* Light Theme */
 .light {
   --bg-color: #f0f2f5;
   color: #2b3a67;
@@ -82,7 +89,6 @@
   }
 }
 
-/* Dark Theme */
 .dark {
   --bg-color: #1a1d26;
   color: #d0d8ef;
@@ -101,7 +107,6 @@
   }
 }
 
-/* Hamburger menu button */
 .menuToggle {
   display: none;
   position: fixed;
@@ -112,7 +117,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 1001; /* above nav */
+  z-index: 1001;
   background: transparent;
   border: none;
   padding: 0;
@@ -144,5 +149,11 @@
   @media (max-width: 360px) {
     top: 0.5rem;
     left: 0.5rem;
+    width: 22px;
+    height: 18px;
+
+    span {
+      height: 2px;
+    }
   }
 }

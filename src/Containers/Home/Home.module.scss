@@ -2,24 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;  // slightly less padding to balance overall spacing
+  padding-top: 8rem;
 }
 
 .photo {
-  width: 11rem;
-  height: 11rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);  // slightly stronger shadow
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
   border: 2px solid #eee;
 }
 
 .name {
-  font-weight: 600;  // slightly bolder
+  font-weight: 600;
   color: var(--theme-page-text);
   font-size: 1.1rem;
-  margin-top: 0.5rem;  // some spacing below the photo
+  margin-top: 0.5rem;
 }
 
 .headerContainer {
@@ -27,14 +27,14 @@
   margin-bottom: 3rem;
   align-items: center;
   text-align: center;
-  gap: 2rem;  // better spacing between photo/info and text
+  gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap;  // improve responsiveness
+  flex-wrap: wrap;
 }
 
 .locationInfo {
   font-weight: 300;
-  margin-left: 6px;  // slightly more space from icon
+  margin-left: 6px;
   font-size: 0.85rem;
   color: var(--theme-page-text);
 }
@@ -89,6 +89,7 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
+
   & > *:hover {
     transform: scale(1.15);
   }
@@ -98,6 +99,7 @@
   .infos {
     width: 75%;
   }
+
   .container {
     padding-top: 5rem;
   }
@@ -108,9 +110,11 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .infos {
     width: 90%;
   }
+
   .infoConatiner {
     margin-right: 0;
   }
