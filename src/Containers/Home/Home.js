@@ -1,22 +1,21 @@
 import classes from './Home.module.scss';
-import photo from '../../assets/rohit.webp'; 
+import photo from '../../assets/shubham.webp'; 
 import { MdLocationOn } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaTwitter, FaUser } from 'react-icons/fa';
-function Home() {
-  
 
+function Home() {
   const socialData = [
     {
       id: 1,
       icon: <FaTwitter size={18} color="#fff" />,
       backColor: '#1DA1F2',
-      link: 'https://x.com/roit_sinha',
+      link: 'https://twitter.com/',
     },
     {
       id: 2,
       icon: <FaLinkedin size={18} color="#fff" />,
       backColor: '#0077B5',
-      link: 'https://www.linkedin.com/in/rohit-sinha-a781772b1/',
+      link: 'https://www.linkedin.com/',
     },
     {
       id: 3,
@@ -28,7 +27,7 @@ function Home() {
       id: 4,
       icon: <FaGithub size={18} color="#fff" />,
       backColor: '#333',
-      link: 'https://github.com/roitsinha',
+      link: 'https://github.com/',
     },
   ];
 
@@ -62,11 +61,11 @@ function Home() {
   return (
     <div className={classes.container}>
       <header className={classes.headerContainer}>
-        <div className={classes.infoConatiner}>
+        <div className={classes.infoContainer}>
           <div className={classes.photoWrapper}>
-            <img src={photo} alt="Rohit Sinha" className={classes.photo} />
+            <img src={photo} alt="Shubham Sinha" className={classes.photo} />
           </div>
-          <p className={classes.name}>Rohit Sinha</p>
+          <p className={classes.name}>Shubham Sinha</p>
           <div className={classes.location}>
             <MdLocationOn height={14} width={14} fill="#EE4047" />
             <span className={classes.locationInfo}>Ranchi, Jharkhand, India</span>
@@ -74,20 +73,18 @@ function Home() {
         </div>
 
         <div className={classes.headerTextBlock}>
-          <p className={classes.headerTxt}>
-            Crafting scalable apps,  
-            <span className={classes.headerSpan}>mastering cloud infrastructure, and streamlining DevOps pipelines.</span>
-          </p>
+        <p className={classes.headerTxt}>
+  I’m Shubham Sinha, a passionate web developer,  
+  <span className={classes.headerSpan}>currently learning and building projects to master modern web development.</span>
+</p>
+
         </div>
       </header>
 
       <section className={classes.infos}>
-      <p>
-  Hello! I’m Rohit Sinha, a Computer Science and Engineering student.
-  Passionate about <strong>web development</strong> and <strong>DevOps</strong>, I’m eager to
-  contribute and grow in these fields.
-</p>
-
+        <p>
+          Hello! I’m Shubham Sinha, a BCA student. I am a web developer and learning web developing.
+        </p>
       </section>
 
       <footer className={classes.footerContainer}>
@@ -101,3 +98,4 @@ function Home() {
 }
 
 export default Home;
+
