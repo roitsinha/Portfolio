@@ -1,23 +1,25 @@
-# Developer Portfolio
+# Shubham Sinha – Portfolio Website
 
-This is a personal portfolio web application built with ReactJS. It showcases projects, skills, experience, and education in a clean and professional layout.
+This is my personal portfolio website built with **React.js**. It highlights my skills, experience, and education, and serves as a showcase for my web development journey.
 
-## Features
+## 🚀 Features
 
-- Responsive design compatible with desktop and mobile devices
-- Sections for Projects, Skills, Experience, and Education
-- Easy to customize with your personal information
-- Built using ReactJS and modern front-end technologies
+- Clean and responsive design for all devices
+- Showcases my skills, education, and self-built projects
+- Built using React.js, HTML, CSS, Git, and GitHub
+- Easy to maintain and update with new content
 
-## Installation
+## 🛠️ Technologies Used
 
-To run the project locally, follow these steps:
+- React.js
+- Git & GitHub
+- VS Code
 
-1. Clone the repository to your local machine
-2. Navigate to the project directory
-3. Install dependencies with `npm install`
-4. Start the development server using `npm start`
+## 📦 Getting Started
 
-## License
+To run this project locally:
 
-This project is licensed under the MIT License.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+   ```
