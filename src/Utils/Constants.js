@@ -1,34 +1,42 @@
+export const projectsList = [
+  {
+    id: "0",
+    current: true,
+    github: "https://github.com/roitsinha/Portfolio",
+    link: "https://roit-sinha.vercel.app/",
+    title: "Portfolio Website Project",
+    text: "Developed a responsive portfolio website using ReactJS and SCSS. Showcases skills, education, and personal projects in a clean and modern layout.",
+  },
+  {
+    id: "1",
+    current: true,
+    github: "https://github.com/roitsinha/EQuality",
+    link: "https://e-quality.vercel.app/",
+    title: "Semester Prep Project",
+    text: "Created a React.js & Tailwind CSS frontend to help engineering students prepare for their semester. Designed UI/UX for usability and responsiveness.",
+  },
+  {
+    id: "2",
+    current: true,
+    github: "https://github.com/roitsinha/Text-Summarizer",
+    link: "#",
+    title: "Text Summarization Project",
+    text: "Used Docker for containerization and deployed on AWS with YAML-based deployment automation. Developed UI using Typescript.",
+  },
+  {
+    id: "3",
+    current: true,
+    github: "https://github.com/roitsinha/infra-ready-node-app",
+    link: "https://infra-ready-node-app.onrender.com",
+    title: "Infra-Ready Node.js App",
+    text: "Containerized the app with Docker and deployed it on Railway. Implemented CI/CD with GitHub Actions for automated testing, linting, and deployment. Integrated PostgreSQL for persistence and prepared Terraform scripts for future AWS automation.",
+  },
+];
+
  
- export const projectsList = [
-   {
-     id: "0",
-     current: true,
-     github: "https://github.com/roitsinha/Portfolio",
-     link: "https://portfolio-two-pink-51.vercel.app/",
-     title: "Portfolio Website Project",
-     text: "Developed a responsive portfolio website using ReactJS and CSS. Integrated email functionality using EmailJS for streamlined communication.",
-   },
-   {
-     id: "1",
-     current: true,
-     github: "https://github.com/roitsinha/EQuality",
-     link: "https://e-quality.vercel.app/",
-     title: "Semester Prep Project",
-     text: "Created a React.js & Tailwind CSS frontend to help engineering students prepare for their semester. Designed UI/UX for usability and responsiveness.",
-   },
-   {
-     id: "2",
-     current: true,
-     github: "https://github.com/roitsinha/Text-Summarizer",
-     link: "#",
-     title: "Text Summarization Project",
-     text: "Used Docker for containerization and deployed on AWS with YAML-based deployment automation. Developed UI using Typescript.",
-   },
- ];
- 
- export const skills =
-"Java; HTML/CSS; YAML; React.js; Tailwind CSS; Git & Github; Docker; AWS (IAM, EC2); Visual Studio Code; IntelliJ; Linux; CentOS";
- 
+export const skills =
+"Java; JavaScript (Node.js); HTML/CSS; YAML; React.js; Tailwind CSS; PostgreSQL; Kubernetes (basic); Git & GitHub; Docker; GitHub Actions; Jenkins; Terraform (basic); Visual Studio Code; IntelliJ; Railway (PaaS); AWS (planned); Linux; CentOS";
+
  export const educationList = [
    {
      id: 1,
