@@ -35,7 +35,7 @@ export const projectsList = [
 
  
 export const skills =
-"Java; JavaScript (Node.js); HTML/CSS; YAML; React.js; Tailwind CSS; PostgreSQL; Kubernetes (basic); Git & GitHub; Docker; GitHub Actions; Jenkins; Terraform (basic); Visual Studio Code; IntelliJ; Railway (PaaS); AWS (planned); Linux; CentOS";
+"Java; JavaScript (Node.js); HTML/CSS; YAML; React.js; Tailwind CSS; PostgreSQL; Kubernetes (basic); Git & GitHub; Docker; GitHub Actions; Jenkins; Terraform (basic); Visual Studio Code; IntelliJ; Railway (PaaS); AWS (planned); Linux; CentOS; .NET (C#); C++; Qt";
 
  export const educationList = [
    {
@@ -85,18 +85,21 @@ export const skills =
      ],
    },
    {
-     id: "exp-2",
-     title: "YouTube Channel Creator",
-     role: "Content Creator & Educator",
-     organization: "Self-initiated",
-     location: "Remote",
-     date: "2022 - Present",
-     description: [
-       "Produced tutorials on Linux system administration, Docker containerization, and software engineering principles.",
-       "Built a small community by sharing practical knowledge and industry insights.",
-       "Developed skills in communication, video production, and content planning.",
-     ],
-   },
+    id: "exp-2",
+    title: ".NET Developer (Medical Imaging)",
+    role: "Software Developer",
+    organization: "Startup (Healthcare/Medical Imaging)",
+    location: "On-site / Hybrid",
+    date: "2023 - Present",
+    description: [
+      "Developing medical imaging software solutions using .NET (C#) and C++ with a focus on performance-critical components.",
+      "Integrated and enhanced PACS (Picture Archiving and Communication System) server workflows for efficient image storage and retrieval.",
+      "Implemented and optimized DICOM features for medical image processing, viewing, and secure data handling.",
+      "Contributed to UI/UX development using Qt and improved cross-platform performance through low-level optimizations.",
+      "Collaborated with a small engineering team to build reliable and user-centric healthcare software products.",
+      "Enjoying working in the medical software domain while continuously learning advanced performance, optimization, and system-level techniques.",
+    ],
+  },
    {
      id: "exp-3",
      title: "Personal Project Developer",
