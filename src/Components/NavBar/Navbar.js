@@ -7,7 +7,8 @@ const navItems = [
   { label: 'Me', path: '/' },
   { label: 'Projects', path: '/projects' },
   { label: 'Experience', path: '/experience' },
-  { label: 'Skills', path: '/skills' }
+  { label: 'Skills', path: '/skills' },
+  { label: 'Journal', path: '/journal' }
 ];
 
 export default function Navbar() {

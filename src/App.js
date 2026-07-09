@@ -6,6 +6,7 @@ import Navbar from './Components/NavBar/Navbar';
 import { Projects } from './Containers/Projects/Projects';
 import Skills from './Containers/Skills/Skills';
 import Experience from './Containers/Experience/Experience';
+import Journal from './Containers/Journal/Journal';
 import Footer from './Components/Footer/Footer';
 import SwitchModeBtn from './Components/SwitchModeBtn/SwitchModeBtn';
 
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route exact path="/experience">
           <Experience />
+        </Route>
+        <Route exact path="/journal">
+          <Journal />
         </Route>
       </Switch>
 
